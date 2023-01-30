@@ -1,0 +1,16 @@
+Your cash drawer can be configured to automatically open when you print a receipt for each transaction. Here are the steps you can take to configure your cash drawer.
+
+Plug in the RJ12 connector cable (which looks similar to a phone line) from the cash drawer into your the receipt printer.
+Next, go to the Settings menu in Windows 10, select Devices and select Printers & Scanners on the left-hand menu.
+UltimatePOS-Cash-Drawer
+Select the printer you’d like to configure, and click on the Manage button.
+UltimatePOS-Cash-Drawer
+Next, click on the Printer Properties link and a window will open. From here, select the Device Settings tab.
+UltimatePOS-Cash-drawer
+Under Installable Options, find the Peripheral Unit Type and change it to ‘Cash Drawer’.
+UltimatePOS-Cash-drawer
+Change the Peripheral Unit 1 and Peripheral Unit 2 fields to ‘Document Bottom’ to have the drawer open after the receipt starts printing.
+If you want the cash drawer to trigger before the receipt prints, select ‘Document Top’ in Peripheral Unit 1 and 2
+PMS-Cash-drawer
+Click OK to save these settings and perform a test sale to see if it’s been configured properly.
+Updated on May 5, 2022
