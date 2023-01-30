@@ -1,7 +1,7 @@
 Thermal Printers:
 2 types of thermal printers are available in the market:
 
-Thermal Line Printers. (Supported after UltimatePOS version > 2.19): Easy to Install & Use.
+Thermal Line Printers. (Supported after PMS version > 2.19): Easy to Install & Use.
 Thermal ESC/POS printers: Complicate to install & use, also some languages & curriences symbol may not be supported.
 WE RECOMMEND USING A THERMAL LINE PRINTER FOR THE EASE OF SETUP AND GOOD PRINT QUALITY.
 ×
@@ -42,7 +42,7 @@ Change “Receipt Printer Type” to “Use Configured Receipt Printer“
 Select the “Receipt Printers” from the list of Receipt Printers
 Click on Update.
 Step3: Installing POS Print Server
-For printing via receipt printer, you will need to install a “pos print server” on your local computer from which UltimatePOS is used.
+For printing via receipt printer, you will need to install a “pos print server” on your local computer from which PMS is used.
 
 Download the server from this link: https://bitbucket.org/twf_nikhila/pos_print_server/downloads/?tab=downloads. by clicking on “Download Repository”
 Unzip the zip file.
