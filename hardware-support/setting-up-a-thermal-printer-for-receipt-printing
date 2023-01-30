@@ -1,0 +1,130 @@
+Thermal Printers:
+2 types of thermal printers are available in the market:
+
+Thermal Line Printers. (Supported after UltimatePOS version > 2.19): Easy to Install & Use.
+Thermal ESC/POS printers: Complicate to install & use, also some languages & curriences symbol may not be supported.
+WE RECOMMEND USING A THERMAL LINE PRINTER FOR THE EASE OF SETUP AND GOOD PRINT QUALITY.
+×
+Browser-based printing or Thermal Line Printers or Direct Thermal: (Recommended)
+Thermal line printers also called as Direct Thermal, are easy to install & use. Also they supports browser based printing. For better result use paper with width 79mm.
+
+To use a thermal line printer follow these steps:
+
+Setup the printer on your computer with the appropriate driver which comes with the printer.
+Go to Settings -> Business Locations -> Settings (green color button for each location). Here change the Receipt Printer Type to Browser based printing and save it.
+In the invoice layout select the Design as Slim
+To disable print dialogue preview, follow the steps mentioned here
+You’re now ready to use the printer, no more steps required.
+
+This printer is supportable with android and other handheld devices like tablets.
+
+Thermal ESC/POS printers:
+Setting an ESC/POS thermal printer involves 3 steps:
+
+Adding a Printer
+Configuring business location to use the added printer.
+Installation Pos Print server.
+Step1: Adding a Printer
+Add a new printer from Settings -> Receipt Printer
+Select the appropriate Connection Type:
+For “Network” provide the IP Address of the printer.
+For “Windows” map the printer to a file and provide the path of the file. You can do this by sharing the printer with your localhost.
+The path will be in this format:smb://localhost/my_printer_nameORsmb://computer_name/my_printer_name (where my_printer_name is name of the printer)
+For “Linux” your printer device file will be somewhere like /dev/lp
+smb://localhost/my_printer_name OR smb://computer_name/my_printer_name (where my_printer_name is name of the printer)(parallel), /dev/usb/lp1(USB), /dev/ttyUSB smb://localhost/my_printer_name OR smb://computer_name/my_printer_name (where my_printer_name is name of the printer)(USB-Serial), /dev/ttyS smb://localhost/my_printer_name OR smb://computer_name/my_printer_name (where my_printer_name is name of the printer)(serial)
+Select the capability profile and add character per line supported in the printer.
+Save the Printer configuration.
+Check the video below for more details on setting it.
+Step2: Configuring Business Location to use printer:
+Go to Settings -> Business Settings.
+For a particular business location, go to “Settings” in actions column.
+Change “Receipt Printer Type” to “Use Configured Receipt Printer“
+Select the “Receipt Printers” from the list of Receipt Printers
+Click on Update.
+Step3: Installing POS Print Server
+For printing via receipt printer, you will need to install a “pos print server” on your local computer from which UltimatePOS is used.
+
+Download the server from this link. by clicking on “Download Repository”
+Unzip the zip file.
+Rename the unzipped folder to “pos_print_server”.
+Move the pos_print_server to document root (which is htdocs in XAMPP).
+Open Command Prompt or also called terminal. And go to the “pos_print_server” directory. You can go to this directory using “CD” command in the command prompt.
+From the Command Prompt which is now inside pos_print_server directory run the below command:
+php server.php
+After running the command it will start the print server and show a message “Server started…”
+Now we are ready to go. Try creating a test sell from the pos screen and it should print in your thermal printer. If you haven’t added a printer then follow the steps mentioned in “Step1: Adding a Printer” and it should work.
+Great, now we’re ready to print on a thermal printer.
+
+Give it a test drive.
+
+Devices like mobile phones and tablets can’t be used for printing if a thermal ESC/POS  printer is used.
+
+Video Guide:
+Follow the steps as mentioned in this video up to 2.
+
+https://www.youtube.com/watch?v=9GRVEdWuxmA
+
+Use pos_print_server instead of the Github repo mentioned here.
+Go to POS screen, add a test invoice and check if it prints. If not please check if the pos receipt server is running or not.
+
+ESC/POS Printers
+Many thermal receipt printers support ESC/POS to some degree. This driver has been known to work with:
+
+AURES ODP-333
+AURES ODP-5
+Bixolon SRP-35
+Citizen CBM1
+Citizen CT-S31
+Daruma DR8
+EPOS TEP 22
+Epson TM-T88II
+Epson TM-T88III
+Epson TM-T88IV
+Epson TM-T88V
+Epson TM-T7
+Epson TM-T82II
+Epson TM-T2
+Epson TM-T2
+Epson TM-T7
+Epson TM-T81
+Epson TM-U22
+Epson TM-U295 (requires release() to release slip).
+Epson TM-U59 and TM-U59
+Epson FX-89
+Equal (EQ-IT-1) POS-58
+Excelvan HOP-E58
+Excelvan HOP-E2
+Excelvan HOP-E8
+Excelvan ZJ-822
+Gainscha GP-589
+Gainscha GP-U8
+Metapace T-1
+Metapace T-25
+Nexa PX7
+Plus III
+Orient BTP-R58
+P-822D
+P85A-4
+Rongta RP326US
+Rongta RP58-U
+SEYPOS PRP-3 (Also marketed as TYSSO PRP-3
+Silicon SP-2
+ECO
+Star TSP1
+III FuturePRNT
+Star TSP-65
+Star TUP-592
+SPRT SP-POS88V
+Xprinter F-9
+XPrinter XP-Q2C
+Venus V248T
+Zjiang NT-58H
+Zjiang ZJ-587
+Zjiang ZJ-589T (Marketed as POS 589T)
+Zjiang ZJ-589K
+
+Printing via Phone/Tablet  Bluetooth using Thermal Printer
+In UltimatePOS there is no special setup required for printing via mobile Bluetooth using thermal printers. You can print receipts like printing any other documents from your computer/mobile in these printers.
+
+Updated on May 11, 2022
+Doc navigation
