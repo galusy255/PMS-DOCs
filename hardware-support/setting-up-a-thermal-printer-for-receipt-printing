@@ -44,7 +44,7 @@ Click on Update.
 Step3: Installing POS Print Server
 For printing via receipt printer, you will need to install a “pos print server” on your local computer from which UltimatePOS is used.
 
-Download the server from this link. by clicking on “Download Repository”
+Download the server from this link: https://bitbucket.org/twf_nikhila/pos_print_server/downloads/?tab=downloads. by clicking on “Download Repository”
 Unzip the zip file.
 Rename the unzipped folder to “pos_print_server”.
 Move the pos_print_server to document root (which is htdocs in XAMPP).
